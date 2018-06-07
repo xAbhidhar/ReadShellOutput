@@ -30,3 +30,16 @@ def get_valid_commands(fileDict):
                     if res !=True:
                         valid_commands.pop(res)
     db_print()
+
+def process_command_output(bashCommand):
+    # TODO: execute the command and put its data in the db
+    try:
+        stime = time.time()
+        output = subprocess.check_output(['bash', '-c', bashCommand], timeout=5)
+        ftime = time.time()
+        push_database(bashCommand,len(bashCommand),ftime - stime,output)
+    except subprocess.TimeoutExpired:
+        push_database(bashCommand,len(bashCommand),0,"long running or not finished")
+    except subprocess.CalledProcessError:
+        return bashCommand
+    return True
