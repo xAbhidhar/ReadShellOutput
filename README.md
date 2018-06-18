@@ -7,3 +7,5 @@ The input file contains two types of commands. Valid commands and invalid comman
 # Tools used
 - Python
 - Docker
+
+# STEPS
