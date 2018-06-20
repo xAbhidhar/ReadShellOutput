@@ -9,3 +9,5 @@ The input file contains two types of commands. Valid commands and invalid comman
 - Docker
 
 # STEPS
+
+# DATABASE
