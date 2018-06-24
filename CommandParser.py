@@ -43,3 +43,22 @@ def process_command_output(bashCommand):
     except subprocess.CalledProcessError:
         return bashCommand
     return True
+
+def push_database(comm, length, dur, out):
+    # print("This result will be cached in the DataBase")
+    # print("Command: "+str(comm))
+    # print("Lenght of Command:" + str(length))
+    # print("Duration of Command Execution: " + str(dur))
+    # print("Output of each Command: "+str(out))
+    # print("*********************************************************************")
+    row = Command(command_string=comm, length=length, duration=dur, output=out)
+    session.add(row)
+    session.commit()
+    session.close()
+
+#Function for printing the databse
+def db_print():
+    conn = engine.connect()
+    select_st = select([Command])
+    res = conn.execute(select_st)
+    for _row in res: print (_row)
