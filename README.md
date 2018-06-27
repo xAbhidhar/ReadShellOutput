@@ -11,3 +11,4 @@ The input file contains two types of commands. Valid commands and invalid comman
 # STEPS
 
 # DATABASE
+The output of the command (if valid command) must be stored in the database. 
