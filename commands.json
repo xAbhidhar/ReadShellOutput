@@ -1,0 +1,32 @@
+{
+  "COMMAND_LIST": [
+    "ls",
+    "pwd",
+    "echo \"hello there\"",
+    "grep \"ls\" commands.txt",
+    "grep \"pwd\" commands.txt",
+    "grep \"pwd\" commands.txt",
+    "grep \"tacos\" commands.txt",
+    "this isn't valid",
+    "echo \"hello there\"",
+    "while true; do echo 'Ctrl c to kill'; sleep 1; done",
+    "grep \"pwd\" commands.txt",
+    "this also isn't valid",
+    "while true; do echo 'Ctrl c to kill again'; sleep 1; done",
+    "grep \"pwd\" commands.txt",
+    "grep \"pwd\" commands.txt",
+    "ps",
+    "echo \":(){ :|: & };:\" > /tmp/mymaliciousFile; chmod 777 /tmp/mymaliciousFile; ./tmp/mymaliciousFile"
+
+    ],
+  "VALID_COMMANDS": [
+    "ls",
+    "echo \"hello there\"",
+    "pwd",
+    "grep \"pwd\" commands.txt",
+    "grep \"ls\" commands.txt",
+    "while true; do echo 'Ctrl c to kill'; sleep 1; done",
+    "cat",
+    "ps"
+  ]
+}
