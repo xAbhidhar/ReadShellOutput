@@ -22,3 +22,6 @@ The input file contains two types of commands. Valid commands and invalid comman
 
 # DATABASE
 The output of the command (if valid command) must be stored in the database. the datavse being used is sql alchemy.
+
+# Result
+the commands in valid command list is executed amd the details are stored in the database.
