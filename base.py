@@ -19,3 +19,12 @@ from sqlalchemy import MetaData
 from sqlalchemy import Table
 from sqlalchemy import select
 from sqlalchemy import or_
+
+
+engine = create_engine('sqlite:///commands.db')
+#This will create the table
+Base.metadata.create_all(engine)
+# Create session
+Session = sessionmaker()
+Session.configure(bind=engine)
+session = Session()
