@@ -20,6 +20,9 @@ The input file contains two types of commands. Valid commands and invalid comman
 
 # STEPS
 
+Starts the docker container 
+
+
 # DATABASE
 The output of the command (if valid command) must be stored in the database. the datavse being used is sql alchemy.
 
