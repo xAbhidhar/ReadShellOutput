@@ -1,0 +1,11 @@
+Flask==0.12.2
+sqlalchemy==1.2.7
+flake8==3.5.0
+flask-swagger==0.2.13
+json
+subprocess
+time
+os
+bashlex
+requests
+
