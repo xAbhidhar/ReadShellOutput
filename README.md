@@ -9,7 +9,7 @@ To build and make a deployable, containerized service that executes and processe
 The service listens for POST requests at a specified endpoint containing a multi-part encoded file parameter. This file is parsed to determine the set of valid commands to be executed. The `commands.txt` file in this repository contains the commands and serves as an example to give a sense how the input file will be formatted. 
 
 ## Libraries Used
-
+- SQL alchemy
 ## Implementations
 
 ### Input
