@@ -10,6 +10,7 @@ The service listens for POST requests at a specified endpoint containing a multi
 
 ## Libraries Used
 - SQL alchemy
+
 ## Implementations
 
 ### Input
@@ -31,7 +32,7 @@ The input file contains two types of commands. Valid commands and invalid comman
 ## Tools used
    - Python
    - Docker
-   - sql achemy
+   - SQL alchemy
 
 ## STEPS
 
