@@ -1,0 +1,4 @@
+1. Convert the Text File into Json Format, as in python a Json will be saved in the Dictionary format and can be easily be parsed. But this is initially required , but as we move forward with more distributed approach we might want to use module like Celery to pass text file and convert the lines into Json
+2. Pass the Valid_Commands Before Command List.
+    This way we will be able to extract the Valid Command list before I can Start validating the Command and executing them.
+3. We Assume that there wont be any repetitions in the Valid_Commands Section of the file passed.
