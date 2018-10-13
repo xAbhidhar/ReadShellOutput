@@ -12,6 +12,10 @@ The service listens for POST requests at a specified endpoint containing a multi
 - SQL alchemy
 
 ## Implementations
+- Traversing is done only once through the complete Commands.txt file to get the desired output.
+- Dividing the Valid_commands section into smaller chunks to search effectively and saving the result in key-value pair to check if the command is executed or not.
+- Duplicated commands will not be executed, as key once set to 0 will indicate Already executed state for a command.
+- Efficiently passing each command to be executed to a method call and error handling the command.
 
 ### Input
 The input file contains two types of commands. Valid commands and invalid commands. The file will always have the invalid commands first and the valid commands after. Only the valid commands needs to be executed.
@@ -36,8 +40,8 @@ The input file contains two types of commands. Valid commands and invalid comman
 
 ## STEPS
 
-   - Starts the docker container 
-   - run the command for making containers 
+   - Starts the docker container
+   - run the command for making containers
 
 ## DATABASE
 The output of the command (if valid command) must be stored in the database. the datavse being used is sql alchemy.
