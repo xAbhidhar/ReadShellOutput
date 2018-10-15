@@ -24,7 +24,7 @@ The input file contains two types of commands. Valid commands and invalid comman
 1. The commands must have a exact match which is case sensitive for the entire command string in the valid commands
 2. All the commands which are uinvalid should be ignored.
 3. The commands file for input is named as `commands.txt`.
-- For every valid command, you need to execute it and store the following meta-data:
+   For every valid command, you need to execute it and store the following meta-data:
   - actual command itself as a string
   - length of command string
   - time to complete (if the command takes > 1 minute to complete, mark a 0
